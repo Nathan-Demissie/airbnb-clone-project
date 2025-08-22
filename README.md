@@ -87,8 +87,34 @@ Planned Components inclue:
           Social media links
           Copyright information   
 
-  Technology Stack
+Technology Stack
   
           Django - A web framework for building RESTful APIs
           PostgresSQL - A relational database system used to store structured data like users, properties, bookings, and reviews.
           GraphQL - A flexible query language for APIs that lets clients request exactly the data they need.
+          
+Database Design
+ 
+          Users - A user can own multiple properties, make bookings, leave reviews, and process payments.
+          Properties - A property belongs to one host and can receive many bookings and reviews.
+          Bookings  - A booking is made by a user for a specific property and is linked to one payment.
+          Reviews - A review is written by a user for a property they booked and includes a rating and comment.
+          Payments - A payment is made by a user for a booking and records the transaction details.
+
+Feature Breakdown
+                
+          User management - Handles user registration, authentication, and role assignment (guest or host). 
+          Property Mangement - Allows hosts to create, update, and manage property listings.
+          Booking System - Enables guests to search for properties and make reservations.
+          Review System - Lets users leave feedback and ratings for properties they’ve booked.
+          Payment Integration - Processes secure transactions for confirmed bookings.
+
+API Security
+
+          Authentication - Verifies user identity using secure login credentials or tokens.
+          Authorization - Ensures users can only access resources and actions permitted by their role.
+          Rate Limiting - Prevents abuse by restricting the number of requests per user/IP over time.
+
+CI/CD Pipeline
+
+        CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of testing, building, and deploying code changes. They are crucial for this project because they ensure rapid, error-free updates to the backend system, improving development efficiency and reliability.Tools like GitHub Actions and Docker are recommended for setting up these pipelines, enabling consistent environments and streamlined deployment workflows.
