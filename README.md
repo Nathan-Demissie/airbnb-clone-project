@@ -86,3 +86,9 @@ Planned Components inclue:
           Company information
           Social media links
           Copyright information   
+
+  Technology Stack
+  
+          Django - A web framework for building RESTful APIs
+          PostgresSQL - A relational database system used to store structured data like users, properties, bookings, and reviews.
+          GraphQL - A flexible query language for APIs that lets clients request exactly the data they need.
